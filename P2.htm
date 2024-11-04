@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html lang="es">
+       <link rel="icon" href="imagenes2/Fondo/Icono_1.png" type="image/png" />
+<head>
+         <meta name="viewport" content="width=device-width"/>
+  <title>Historia IGA</title>
+ <style>
+      body {
+            background-image: url(imagenes2/Fondo/Fondo2.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: serif;
+            color:#d9d7d7;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 1);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            top: 0;
+            left: 0;
+        }
+
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #navbar img {
+            width: 100px;
+            height: auto;
+        }
+
+        #navbar h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            font-style: italic;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li:hover {
+            background: black;
+        }
+
+        #center {
+            padding: 20px;
+            margin-top: 120px;
+        }
+
+        #center h2 {
+             font-family: sans-serif;
+
+        }
+        #center b {
+             font-family:Candara;
+             color:#ffe345;
+        }
+
+        #galeria .foto {
+            width: 30%;
+            margin-bottom: 10px;
+
+        }
+
+        #galeria .foto img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #galeria p {
+            overflow: auto;
+        }
+        #logo img {
+                width: 200px;
+                height: auto;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+                border-radius: 8px;
+        }
+        #logo ul li h2 {
+             overflow: auto;
+             float: left;
+        }
+        #logo .foto img {
+                margin-right: 15px
+        }
+
+        #footer {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #footer h2 {
+            font-family: sans-serif;
+            color:#fdfb73;
+        }
+
+        #footer a {
+            color:#ff584b;
+            text-decoration: none;
+            font-family: monospace;
+        }
+
+        #footer a:hover {
+            color: #fdfb73;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        iframe {
+            max-width: 100%;
+            height: auto;
+            border: 0;
+        }
+
+
+   /*CSS para el menú para dispositivos Móviles*/
+    .menu-toggle {
+
+                order:1;
+
+    }
+
+   @media (max-width: 768px) {
+
+
+
+
+
+
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        z-index: 101;
+        overflow: auto;
+        transition: transform 0.3s ease;
+        transform: translateY(-100%);
+    }
+
+    nav ul.nav-active {
+        display: flex;
+        transform: translateY(0);
+    }
+
+    nav ul li {
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid #333;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        padding: 20px;
+        color: white;
+        font-size: 18px;
+        display: block;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .menu-toggle {
+        z-index: 102;
+        display: block;
+    }
+}
+
+ @media (max-width: 480px) {
+    body {
+        font-size: medium;
+    }
+
+    #center {
+        padding: 10px;
+        margin-top: 60px;
+    }
+
+    #navbar h1 {
+           display:none;
+    }
+
+ img { max-height: 80vh;
+    }
+
+
+
+
+
+}
+    </style>
+</head>
+<body>
+     <header>
+                <div id="navbar">
+                        <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+                        <img src="imagenes2/Fondo/Icono_1.png" alt="Logo">
+                        <h1>I.G.A (Instituto General Alvarado)</h1>
+                        <nav>
+                                <ul>
+                                        <li><a href="index.htm">Inicio</a></li>
+                                        <li><a href="P2.htm">Historia</a></li>
+                                        <li><a href="P3.htm">Primaria</a></li>
+                                        <li><a href="P4.htm">Secundaria</a></li>
+                                        <li><a href="P5.htm">Diario</a></li>
+                                </ul>
+                        </nav>
+                </div>
+        </header>
+
+    <div id="center">
+    </br>
+    </br>
+        <h2>Historia:</h2>
+        <p>El Instituto General Alvarado se fund&oacute; el 7 de mayo de 1951 por iniciativa del se&ntilde;or Samuel Gr&uuml;nblatt, radicado entonces en Miramar. Como en ese tiempo las familias deb&iacute;an emigrar para que sus hijos sigan estudios secundarios, dicha persona con visi&oacute;n de futuro convoc&oacute; a personalidades de la ciudad para que lo acompa&ntilde;en en el proyecto de crear una instituci&oacute;n.
+Originalmente naci&oacute; como Colegio Nacional Mixto de Estudios Secundarios, cuya primera promoci&oacute;n sali&oacute; en 1956 con una orientaci&oacute;n de bachillerato aunque m&aacute;s adelante se le agreg&oacute; el t&iacute;tulo comercial que tuvo a sus egresados iniciales en 1965.
+La matr&iacute;cula se inici&oacute; con primer a&ntilde;o y funcion&oacute; en un sector del edificio que ofreci&oacute; la escuela N&deg; 1 "General Jos&eacute; de San Mart&iacute;n", pero m&aacute;s adelante con el aumento de alumnado pas&oacute; al inmueble que actualmente ocupa la comisar&iacute;a de Miramar sobre avenida 23 entre 22 y 24, para tener su lugar definitivo en el paraje Leloir, paseo Costanero del Sur.
+Otra cuesti&oacute;n para tener en cuenta fue el deporte, sobre todo el atletismo con la vieja pista de 400 metros ubicada en las adyacencias. Por aquella &eacute;poca de la mano de reconocidos profesores de Educaci&oacute;n F&iacute;sica tuvo un importante reconocimiento con j&oacute;venes brillantes que representaron exitosamente al colegio y el distrito en competencias de diversa envergadura.</p>
+<p>Actualmente la cancha de atletismo no se encuentra, s&iacute; cuenta con un hermoso tinglado y con un play&oacute;n atr&aacute;s. Aparte  que, ahora la secundaria tiene tendencia al deporte y la primaria es orientaci&oacute;n b&aacute;sica.  </p>
+</br>
+<p>El 27 de Julio del 2012, Alumnos y profesores del Instituto General Alvarado (I.G.A) en Miramar, recogieron firmas para evitar su cierre debido a recortes de subvenciones del gobierno bonaerense. La campa&ntilde;a consist&iacute;a en recolectar firmas en barrios y comercios locales, tambi&eacute;n obtuvieron apoyo de los turistas y extendieron la solicitud de colaboraci&oacute;n a trav&eacute;s de redes sociales.
+Este esfuerzo conjunto buscó demostrar el apoyo a la Instituci&oacute;n y evitar su cierre, que podr&iacute;a haber afectado a m&aacute;s de quinientos alumnos en ese a&ntilde;o.</p>
+    </div>
+      <div id= "galeria">
+
+    <div class="foto"><img src="imagenes2/Fondo/images (1).jpeg" width="600" height="300" alt=""></div>
+    <h2>Fotos antiguas:</h2>
+    <div class="foto"><img src="imagenes2/Fondo/20240816_105449.jpg" width="2560" height="1536" alt=""></div>
+     <p>Parte en donde se encuentra el actual gimnacio del instituto: Espacio en donde se realizan las actividades gimn&aacute;sticas.</p>
+    <div class="foto"><img src="imagenes2/Fondo/20240816_105513.jpg" width="2560" height="1536" alt=""></div>
+    <p>Este es la parte en donde actualmente se encuentra el tinglado.</p>
+    <div class="foto"><img src="imagenes2/Fondo/20240816_105531.jpg" width="2560" height="1536" alt=""></div>
+    <p>El IGA, antiguamente era un hotel, entonces en la imagen se refleja la recepci&oacute;n y las mesas en formato de un hotel. </p>
+     </div>
+
+    <div id="logo">
+
+    <h2>Logo del Instituto General Alvarado.</h2>
+    <img src="imagenes2/Fondo/Icono_1.png" width="50" height="50" alt="">
+    <h2>El logo del Intituto est&aacute; conformado por los siguientes elementos:</h2>
+    <ul>
+    <li>Un tri&aacute;ngulo amarillo.</li>
+    <li>Un c&iacute;rculo negro. </li>
+    <li>Una circunferencia roja. </li>
+    <li>Una circunferencia blanca, junto con el nombre del Instituto.</li>
+
+   </ul>
+
+
+
+
+    </div>
+
+
+    <div id="footer">
+        <h2>Contactos:</h2>
+        <ul>
+            <li>Facebook: <a href="https://www.facebook.com/IGAoficial/?locale=es_LA">IGAoficial</a></li>
+            <li>Tel&eacute;fono (Whatsapp, apretar n&uacute;mero):<a href="https://api.whatsapp.com/send?phone=%2B542291431109&context=ARD4Fvv9hSpEI5CmakAK0zwjpUykox6ps4uo-8-t13NgklLztJ4UVT-m-eQKnDEQddOsbvBrGQQWizhqc1slWZimNksSNdW5rxR82L2isUPLpXsM5olRan5YILY9BTeTOc68A2k2MGXXliYHxUXOkwkwnw&source=FB_Page&app=facebook&entry_point=page_cta">&nbsp;0223 15-426-5557</a></li>
+            <li>Correo electr&oacute;nico: <a href="mailto:institutogeneralalvarado@yahoo.com">&nbsp;institutogeneralalvarado@yahoo.com</a></li>
+        </ul>
+    </div>
+
+     <script>
+                const menuToggle = document.querySelector('.menu-toggle');
+                const navMenu = document.querySelector('nav ul');
+
+                menuToggle.addEventListener('click', () => {
+                        navMenu.classList.toggle('nav-active');
+                });
+        </script>
+</body>
+</html>

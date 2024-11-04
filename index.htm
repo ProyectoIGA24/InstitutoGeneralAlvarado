@@ -1,0 +1,312 @@
+        <!DOCTYPE html> <!--Created of 04/10/23 and continued of 29/07/2024-->
+                        <!--Property of 6°B students-->
+<html lang="es">
+<link rel="icon" href="imagenes2/Fondo/Icono_1.png" type="image/png" />
+<head>
+    <meta name="viewport" content="width=device-width"/>   
+    <title>Proyecto IGA</title>
+    <link rel="icon" href="imagenes2/icono_1.png" type="image/png">
+    <style>
+    /*CSS de la página web en general*/
+        body {
+            background-image: url(imagenes2/Fondo/Fondo2.png); /*Fondo de la página*/
+            background-repeat: no-repeat;   /*La propiedad background-repeat en CSS controla cómo se repite una imagen de fondo (background image) en un elemento.
+                                             Es especialmente útil cuando deseas ajustar la forma en que una imagen se muestra en un área con dimensiones mayores o menores que la propia imagen.*/
+            background-attachment: fixed;   /*La propiedad background-attachment es útil para controlar cómo la imagen de fondo se comporta en relación con el contenido de un elemento y el viewport. Dependiendo del valor que elijas (scroll, fixed, o local),
+                                              puedes lograr diferentes efectos visuales que pueden mejorar la experiencia de usuario en tu sitio web. */
+            background-size: cover;    /*  background-size te permite controlar cómo se ajusta la imagen de fondo al área del elemento. Puedes optar por cubrir el área completa (cover),
+                                           ajustar la imagen para que sea completamente visible (contain), o especificar un tamaño exacto usando valores de longitud o porcentaje. */
+            font-family: serif;  /* °font-style: normal;: Muestra el texto sin inclinación adicional, en el estilo de fuente estándar.
+                                    °font-style: italic;: Muestra el texto en cursiva, con una inclinación más curvada.
+                                    ° font-style: oblique;: Muestra el texto en una inclinación que puede variar y no necesariamente es tan curvada como la cursiva.
+                                 La propiedad font-style es útil para aplicar variaciones estilísticas a textos y mejorar la legibilidad o el diseño de los contenidos en una página web. */
+            color:#d9d7d7;  /*Color= Color de la tipografía del texto*/
+            font-size: large; /* Font-size= Tamaño de la letra*/
+            margin: 0; /*Margin= Margen de la página*/
+            padding: 0;  /* Padding= El padding es esencial para mejorar la legibilidad y el diseño al proporcionar espacio alrededor del contenido dentro de los elementos, lo que evita que el texto o los elementos se peguen a los bordes.*/
+            overflow-x: hidden; /* OverFlow-x= La propiedad overflow-x es útil para gestionar el contenido que excede el ancho de su contenedor, especialmente en casos de diseño responsivo o cuando se trabaja con elementos de ancho fijo.*/
+        }
+
+        header {
+            background: rgba(0, 0, 0, 1);
+            position: fixed; /*Cada valor de position tiene sus usos específicos dependiendo del comportamiento deseado para el elemento en el diseño de la página.*/
+            width: 100%; /* Width= Usar width correctamente te permite controlar el diseño y la distribución de los elementos en una página web de manera efectiva.
+                          width: Define el ancho de un elemento. Puede ser un valor fijo, un porcentaje del contenedor padre, o automático para ajustarse al contenido.
+                          °Valores Comunes: px, em, rem, %, vw, auto.*/
+            z-index: 100; /*Z-Index= El uso adecuado de z-index permite gestionar la visibilidad y el orden de los elementos en una página web, especialmente en situaciones con elementos superpuestos.*/
+            top: 0; /*Top= La propiedad top es esencial para crear layouts (Los layouts en diseño web son la disposición estructural de los elementos en una página.) flexibles y adaptativos, y es especialmente útil en diseño web para posicionar elementos de forma precisa.*/
+            left: 0;  /*La propiedad left en CSS se usa para controlar la posición horizontal de un elemento respecto a su contenedor o su posición inicial, dependiendo del valor de position.
+                        Es una herramienta clave para el diseño y la disposición precisa de elementos en una página web.*/
+        }
+
+
+        #navbar {
+            display: flex;  /*La propiedad display es esencial para definir cómo se comportan y se muestran los elementos en una página web. Permite especificar si un elemento es un bloque, en línea, flexible, de cuadrícula, o si debe ocultarse completamente, entre otras opciones.*/
+            align-items: center; /*La propiedad align-items es esencial para el diseño en Flexbox y Grid, ya que permite alinear los elementos secundarios a lo largo del eje transversal del contenedor.
+                                   Esto facilita la creación de diseños flexibles y responsivos que se adaptan a diferentes tamaños y configuraciones de los contenedores.
+                                   °Flexbox: Ideal para diseños unidimensionales (una fila o una columna). Proporciona flexibilidad para alinear y distribuir espacio dentro de una única dimensión.
+                                   °Grid: Ideal para diseños bidimensionales (filas y columnas). Permite un control más preciso sobre la ubicación y el tamaño de los elementos en una cuadrícula.*/
+            justify-content: space-between;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #navbar img {
+            width: 100px;
+            height: auto;
+        }
+
+        #navbar h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            font-style: italic;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li:hover {
+            background: black;
+        }
+
+        #center {
+            padding: 20px;
+            margin-top: 120px;
+        }
+
+        #center h2 {
+             font-family: sans-serif;
+
+        }
+        #center b {
+             font-family:Candara;
+             color:#ffe345;
+        }
+
+        #footer {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #footer h2 {
+            font-family: sans-serif;
+            color:#fdfb73;
+        }
+
+        #footer a {
+            color:#ff584b;
+            text-decoration: none;
+            font-family: monospace;
+        }
+
+        #footer a:hover {
+            color: #fdfb73;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        iframe {
+            max-width: 100%;
+            height: auto;
+            border: 0;
+        }
+
+
+   /*CSS para el menú para dispositivos Móviles*/
+    .menu-toggle {
+
+                order:1;
+
+    }
+
+   @media (max-width: 768px) {
+
+
+
+
+
+
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8); /* Fondo oscuro con algo de transparencia */
+        position: fixed;
+        top: 0; /* Empieza desde la parte superior */
+        left: 0;
+        width: 100%;
+        height: 100%; /* Cubre toda la pantalla */
+        box-sizing: border-box;
+        z-index: 101;
+        overflow: auto; /* Permite hacer scroll si el contenido es largo */
+        transition: transform 0.3s ease; /* Transición suave para mostrar/ocultar */
+        transform: translateY(-100%); /* Inicialmente escondido fuera de la vista */
+    }
+
+    nav ul.nav-active {
+        display: flex;
+        transform: translateY(0); /* Mostrar el menú */
+    }
+
+    nav ul li {
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid #333; /* Separador entre ítems */
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        padding: 20px; /* Más espacio en los ítems del menú */
+        color: white; /* Color del texto */
+        font-size: 18px; /* Tamaño del texto */
+        display: block;  /*Display= la propiedad display controla cómo se muestra un elemento en la página web. Es una de las propiedades de CSS más importantes y versátiles para el diseño y la maquetación.*/
+        text-decoration: none;   /* Decoración del texto */
+        /* Efecto Haver= El "efecto hover" es un término en diseño web y CSS que se refiere al cambio visual que ocurre en un elemento cuando el usuario pasa el cursor sobre él.
+        Es una técnica comúnmente utilizada para mejorar la interacción del usuario y proporcionar retroalimentación visual. */
+    }
+
+    nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.2); /* Efecto hover sutil */
+    }
+
+    .menu-toggle {
+        z-index: 102; /* Asegúrate de que el botón esté encima del menú */
+        display: block; /* Hacer visible el botón en dispositivos móviles */
+    }
+}
+
+ @media (max-width: 480px) {
+    body {
+        font-size: medium;
+    }
+
+    #center {
+        padding: 10px;
+        margin-top: 60px;
+    }
+
+    #navbar h1 {
+           display:none;
+    }
+
+
+
+
+
+
+}
+    </style>
+</head>
+<body>
+     <header>
+                <div id="navbar">
+                        <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+
+
+                        <img src="imagenes2/Fondo/Icono_1.png" alt="Logo">
+                        <h1>I.G.A (Instituto General Alvarado)</h1>
+
+
+                        <nav>
+                                <ul>
+                                        <li><a href="index.htm">Inicio</a></li>
+                                        <li><a href="P2.htm">Historia</a></li>
+                                        <li><a href="P3.htm">Primaria</a></li>
+                                        <li><a href="P4.htm">Secundaria</a></li>
+                                        <li><a href="P5.htm">Diario</a></li>
+                                </ul>
+                        </nav>
+                </div>
+        </header>
+
+    <div id="center">
+    </br>
+    </br>
+        <h2>Resumen:</h2>
+        <p>El Instituto General Alvarado es una instituci&oacute;n de gesti&oacute;n privada, mixta, de jornada simple y de formaci&oacute;n laica. La instituci&oacute;n educativa IGA General Alvarado promueve las siguientes acciones y pr&aacute;cticas dentro de su propuesta de proyecto educativo:</p>
+        <ol>
+            <img src="imagenes2/Fondo/Foto-1.jpg" width="496" height="372" style="float: right" alt="">
+            <li>Campamentos.</li>
+            <li>Viajes de Estudio Nacionales.</li>
+            <li>Feria Cultural.</li>
+            <li>Jornadas de Convivencia.</li>
+            <li>Orientaci&oacute;n Vocacional.</li>
+            <li>Proyecto Ecol&oacute;gico.</li>
+            <li>Nataci&oacute;n.</li>
+        </ol>
+
+        <h2>&iquest;D&oacute;nde encontrarnos?</h2>
+        <b>El IGA est&aacute; ubicado: Paseo Costanero del Sud S/N 7607 Miramar Buenos Aires.</b>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.5298172237685!2d-57.8295750243865!3d-38.26720956008866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9585107fbf1b0e09%3A0xb0ac3f030e0a8276!2sInstituto%20General%20Alvarado!5e0!3m2!1ses-419!2sar!4v1696460750636!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div id="footer">
+        <h2>Contactos:</h2>
+        <ul>
+            <li>Facebook: <a href="https://www.facebook.com/IGAoficial/?locale=es_LA">IGAoficial</a></li>
+            <li>Tel&eacute;fono (Whatsapp, apretar n&uacute;mero):<a href="https://api.whatsapp.com/send?phone=%2B542291431109&context=ARD4Fvv9hSpEI5CmakAK0zwjpUykox6ps4uo-8-t13NgklLztJ4UVT-m-eQKnDEQddOsbvBrGQQWizhqc1slWZimNksSNdW5rxR82L2isUPLpXsM5olRan5YILY9BTeTOc68A2k2MGXXliYHxUXOkwkwnw&source=FB_Page&app=facebook&entry_point=page_cta">&nbsp;0223 15-426-5557</a></li>
+            <li>Correo electr&oacute;nico: <a href="mailto:institutogeneralalvarado@yahoo.com">&nbsp;institutogeneralalvarado@yahoo.com</a></li>
+        </ul>
+    </div>
+<!--JavaScrip= Para que la página se ajuste a todos los dispositivos-->
+     <script>
+                const menuToggle = document.querySelector('.menu-toggle');
+                const navMenu = document.querySelector('nav ul');
+
+                menuToggle.addEventListener('click', () => {
+                        navMenu.classList.toggle('nav-active');
+                });
+        </script>
+</body>
+</html>

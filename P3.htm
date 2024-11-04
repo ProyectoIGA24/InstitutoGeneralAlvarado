@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html>
+      <link rel="icon" href="imagenes2/Fondo/Icono_1.png" type="image/png" />
+<head>
+         <meta name="viewport" content="width=device-width"/>
+  <title>Primario IGA</title>
+ <style>
+      body {
+            background-image: url(imagenes2/Fondo/Fondo2.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: serif;
+            color:#d9d7d7;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 1);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            top: 0;
+            left: 0;
+        }
+
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #navbar img {
+            width: 100px;
+            height: auto;
+        }
+
+        #navbar h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            font-style: italic;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li:hover {
+            background: black;
+        }
+
+        #center {
+            padding: 20px;
+            margin-top: 120px;
+        }
+
+        #center h2 {
+             font-family: sans-serif;
+
+        }
+        #center b {
+             font-family:Candara;
+             color:#ffe345;
+        }
+        #materia tbody {
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          padding-bottom:20px;
+          padding-top:20px;
+      }
+       #materia table {
+            width: 20%;
+            border-collapse: collapse;
+            background-color:#333231;
+
+
+
+        }
+       #materia th, td {
+            border: 1px solid black;
+            border-color: #9b5e55;
+            padding: 6px;
+            text-align: left; color: #9b5e55;
+
+        }
+      #materia td {
+             background-color: #f1dfdc;
+        }
+
+      #galeria {
+          flex-wrap:wrap;
+          display:flex;
+          justify-content: left;
+          align-items: center;
+      }
+       #text a {
+            color:#ff584b;
+            text-decoration: none;
+            font-family: monospace;
+        }
+
+        #text a:hover {
+            color: #fdfb73;
+        }
+
+
+        #footer {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #footer h2 {
+            font-family: sans-serif;
+            color:#fdfb73;
+        }
+
+        #footer a {
+            color:#ff584b;
+            text-decoration: none;
+            font-family: monospace;
+        }
+
+        #footer a:hover {
+            color: #fdfb73;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        iframe {
+            max-width: 100%;
+            height: auto;
+            border: 0;
+        }
+
+
+   /*CSS para el menú para dispositivos Móviles*/
+    .menu-toggle {
+
+                order:1;
+
+    }
+
+   @media (max-width: 768px) {
+
+
+
+
+
+
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        z-index: 101;
+        overflow: auto;
+        transition: transform 0.3s ease;
+        transform: translateY(-100%);
+    }
+
+    nav ul.nav-active {
+        display: flex;
+        transform: translateY(0);
+    }
+
+    nav ul li {
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid #333;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        padding: 20px;
+        color: white;
+        font-size: 18px;
+        display: block;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .menu-toggle {
+        z-index: 102;
+        display: block;
+    }
+}
+
+ @media (max-width: 480px) {
+    body {
+        font-size: medium;
+    }
+
+    #center {
+        padding: 10px;
+        margin-top: 60px;
+    }
+
+    #navbar h1 {
+           display:none;
+    }
+
+
+
+
+
+
+}
+    </style>
+</head>
+<body>
+     <header>
+                <div id="navbar">
+                        <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+                        <img src="imagenes2/Fondo/Icono_1.png" alt="Logo">
+                        <h1>I.G.A (Instituto General Alvarado)</h1>
+                        <nav>
+                                <ul>
+                                        <li><a href="index.htm">Inicio</a></li>
+                                        <li><a href="P2.htm">Historia</a></li>
+                                        <li><a href="P3.htm">Primaria</a></li>
+                                        <li><a href="P4.htm">Secundaria</a></li>
+                                        <li><a href="P5.htm">Diario</a></li>
+                                </ul>
+                        </nav>
+                </div>
+        </header>
+
+    <div id="center">
+    </br>
+    </br>
+        <h2>Primario:</h2>
+        <p>La primaria (N&#176;5644) cuenta con orientaci&oacute;n com&uacute;n (DIEGEP), es una primaria que cuenta con a&ntilde;os de primero a sexto, el uniforme cuenta con un buzo rojo, pantal&oacute;n gris y chomba blanca. Una vez concluya su transcurso en la escuela primaria, el alumno puede seguir cursando mediante la medida de precios que cuenta la secundaria.
+    <br>Tambi&eacute;n, en su &uacute;ltimo a&ntilde;o, emprenden un viaje hac&iacute;a "El griego" a acampar (Tres d&iacute;as y dos noches) entre millones de proyectos que se van realizando a medida que pasa el a&ntilde;o.</p>
+
+         <h2>Uniforme:</h2>
+         <p>El uniforme de la primaria cuenta con un buzo rojo, una remera o chomba blanca (todo con el logo de la instituci&oacute;n) y un pantal&oacute;n gris:</p>
+           <img src="imagenes2/Fondo/I.G.A.WEB (2).png" width="300" height="920" alt="">
+
+     <div id="materias">
+         <h2>Materias:</h2>
+           <p>Las materias ir&aacute;n variando a medida que el alumno vaya pasando de a&ntilde;o.</p>
+           <img src="imagenes2/Fondo/IMG-20241016-WA0002.jpg" width="449" height="274" alt="">
+        <!-- Imagen de las materias de primaria-->
+     </div>
+      </div>
+      <div id="galeria">
+        <img src="imagenes2/Fondo/Screenshot_20231004-205023_Facebook.jpg" width="420" height="239" alt="">
+      </div>
+      <div id="text">
+        <p>Foto sacada en el 2021, <a href="https://www.facebook.com/IGAoficial/photos/pb.100063512382797.-2207520000/2566695096707150/?type=3&locale=es_LA%22">Facebook.</a></p>
+        </div>
+
+
+
+    <div id="footer">
+        <h2>Contactos:</h2>
+         <ul>
+            <li>Facebook: <a href="https://www.facebook.com/IGAoficial/?locale=es_LA">IGAoficial</a></li>
+            <li>Tel&eacute;fono (Whatsapp, apretar n&uacute;mero):<a href="https://api.whatsapp.com/send?phone=%2B542291431109&context=ARD4Fvv9hSpEI5CmakAK0zwjpUykox6ps4uo-8-t13NgklLztJ4UVT-m-eQKnDEQddOsbvBrGQQWizhqc1slWZimNksSNdW5rxR82L2isUPLpXsM5olRan5YILY9BTeTOc68A2k2MGXXliYHxUXOkwkwnw&source=FB_Page&app=facebook&entry_point=page_cta">&nbsp;0223 15-426-5557</a></li>
+            <li>Correo electr&oacute;nico: <a href="mailto:institutogeneralalvarado@yahoo.com">&nbsp;institutogeneralalvarado@yahoo.com</a></li>
+        </ul>
+    </div>
+
+     <script>
+                const menuToggle = document.querySelector('.menu-toggle');
+                const navMenu = document.querySelector('nav ul');
+
+                menuToggle.addEventListener('click', () => {
+                        navMenu.classList.toggle('nav-active');
+                });
+        </script>
+</body>
+</html>

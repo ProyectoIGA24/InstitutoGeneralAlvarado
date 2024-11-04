@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html>
+       <link rel="icon" href="imagenes2/Fondo/Icono_1.png" type="image/png" />
+<head>
+         <meta name="viewport" content="width=device-width"/>
+  <title>Secundario IGA</title>
+  <style>
+      body {
+            background-image: url(imagenes2/Fondo/Fondo2.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: serif;
+            color:#d9d7d7;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 1);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            top: 0;
+            left: 0;
+        }
+
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #navbar img {
+            width: 100px;
+            height: auto;
+        }
+
+        #navbar h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+            font-style: italic;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li:hover {
+            background: black;
+        }
+
+        #center {
+            padding: 20px;
+            margin-top: 120px;
+        }
+
+        #center h2 {
+             font-family: sans-serif;
+
+        }
+        #center b {
+             font-family:Candara;
+             color:#ffe345;
+        }
+        #galeria {
+            text-align: left;
+           margin: 20px;
+        }
+
+         #galeria img {
+           float: left;
+           margin-right: 15px;
+           max-width: 100%;
+           height: auto;
+        }
+        .texto-debajo p {
+             margin: 20px;
+             margin-top: 10px;
+        }
+
+        #footer {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #footer h2 {
+            font-family: sans-serif;
+            color:#fdfb73;
+        }
+
+        #footer a {
+            color:#ff584b;
+            text-decoration: none;
+            font-family: monospace;
+        }
+
+        #footer a:hover {
+            color: #fdfb73;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        iframe {
+            max-width: 100%;
+            height: auto;
+            border: 0;
+        }
+
+
+   /*CSS para el menú para dispositivos Móviles*/
+    .menu-toggle {
+
+                order:1;
+
+    }
+
+   @media (max-width: 768px) {
+
+
+
+
+
+
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        z-index: 101;
+        overflow: auto;
+        transition: transform 0.3s ease;
+        transform: translateY(-100%);
+    }
+
+    nav ul.nav-active {
+        display: flex;
+        transform: translateY(0);
+    }
+
+    nav ul li {
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid #333;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        padding: 20px;
+        color: white;
+        font-size: 18px;
+        display: block;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .menu-toggle {
+        z-index: 102;
+        display: block;
+    }
+}
+
+ @media (max-width: 480px) {
+    body {
+        font-size: medium;
+    }
+
+    #center {
+        padding: 10px;
+        margin-top: 60px;
+    }
+
+    #navbar h1 {
+           display:none;
+    }
+
+           }
+    </style>
+</head>
+<body>
+     <header>
+                <div id="navbar">
+                        <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+                        <img src="imagenes2/Fondo/Icono_1.png" alt="Logo">
+                        <h1>I.G.A (Instituto General Alvarado)</h1>
+                        <nav>
+                                <ul>
+                                        <li><a href="index.htm">Inicio</a></li>
+                                        <li><a href="P2.htm">Historia</a></li>
+                                        <li><a href="P3.htm">Primaria</a></li>
+                                        <li><a href="P4.htm">Secundaria</a></li>
+                                        <li><a href="P5.htm">Diario</a></li>
+                                </ul>
+                        </nav>
+                </div>
+        </header>
+
+    <div id="center">
+    </br>
+    </br>
+        <h2>Secundario: Tendencia a Educación f&iacute;sica.</h2>
+        <p> La escuela secundaria tiene tendencia a la educaci&oacute;n f&iacute;sica. En los primeros tres a&ntilde;os, contienen casi las mismas materias que han tenido (en su mayor&iacute;a)en la primaria, ya pasado ese año, comienzan a implementar las actividades y materias las cuales le corresponden por la tendencia que contiene el colegio.
+    <br>Hacen todo tipo de proyectos y salidas, como tambi&eacute;n campamentos educativos.
+    <br>En deportes, se hacen much&iacute;simos, unos de ellos son: Handball, Basket, V&oacute;ley, Softball, Hockey, Tennis, etc.
+    <br>&nbsp;Desde tercero, comienzan teniendo un campamento sencillo, de un d&iacute;a solamente; en segundo a Mar del sur; en cuarto, tienen un campamento en Vigilancia que, solamente es un d&iacute;a solo; luego, comienza a complicarse ya que tendr&aacute;n, en quinto a&ntilde;o un proyecto que se viene llevando hace aproximadamente 13 a&ntilde;os, que es ir a visitar y a ascender a la sierra de la ventana, tres picos. (la sierra m&acute;s alta de la Provincia de Buenos Aires ), que es el m&aacute;s largo, cuatro d&iacute;s y tres noches all&iacute;; y, por &uacute;ltimo, en sexto, hay un campamento en Loebr&iacute;a de tres d&iacute;as.
+    <br>Es una de las experiencias m&acute;s inolvidables y caracter&iacute;sticas de este colegio, es uno de los &uacute;nicos en la zona de Miramar en hacer este tipo de cosas.</p>  </div>
+
+ <div id="galeria">
+
+    <img src="imagenes2/Fondo/IMG-20230907-WA0020.jpg" width="580" height="275" alt="">
+    <img src="imagenes2/Fondo/IMG-20230907-WA0019.jpg" width="580" height="276" alt="">
+    </br>
+    <p class="texto-debajo">Tomada en el a&ntilde;o 2023: 5to a&ntilde;o subiendo a la sierra Tres Picos.</p>
+
+    </div>
+</br>
+</br>
+</br>
+
+     <div id="materias">
+            <p>Estas son las materias pero de forma generalizada, una vez el alumno vaya avansando, est&aacute;s ir&aacute;n cambiando.</p>
+        <!--imagenes de las materias-->
+        <img src="imagenes2/Fondo/IMG-20241016-WA0003.jpg" width="453" height="487" alt="">
+        <h2>Uniforme:</h2>
+       <p>El uniforme del Instituto General Alvarado, est&aacute; conformado por un buzo, un pantal&oacute;n negro y una chomba (o remera) blanca: </p>
+       <img src="imagenes2/Fondo/I.G.A.WEB.png" width="300" height="920" alt="">
+    </div>
+
+
+
+
+    <div id="footer">
+        <h2>Contactos:</h2>
+        <ul>
+            <li>Facebook: <a href="https://www.facebook.com/IGAoficial/?locale=es_LA">IGAoficial</a></li>
+            <li>Tel&eacute;fono (Whatsapp, apretar n&uacute;mero):<a href="https://api.whatsapp.com/send?phone=%2B542291431109&context=ARD4Fvv9hSpEI5CmakAK0zwjpUykox6ps4uo-8-t13NgklLztJ4UVT-m-eQKnDEQddOsbvBrGQQWizhqc1slWZimNksSNdW5rxR82L2isUPLpXsM5olRan5YILY9BTeTOc68A2k2MGXXliYHxUXOkwkwnw&source=FB_Page&app=facebook&entry_point=page_cta">&nbsp;0223 15-426-5557</a></li>
+            <li>Correo electr&oacute;nico: <a href="mailto:institutogeneralalvarado@yahoo.com">&nbsp;institutogeneralalvarado@yahoo.com</a></li>
+        </ul>
+    </div>
+
+     <script>
+                const menuToggle = document.querySelector('.menu-toggle');
+                const navMenu = document.querySelector('nav ul');
+
+                menuToggle.addEventListener('click', () => {
+                        navMenu.classList.toggle('nav-active');
+                });
+        </script>
+</body>
+</html>
